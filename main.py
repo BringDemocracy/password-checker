@@ -42,13 +42,10 @@ def check_special(password):
     return False
 
 def password_checker(password):
-    if check_length(password) == True:
-        if check_uppercase(password) == True:
-            if check_lowercase(password) == True:
-                if check_number(password) == True:
-                    if check_special(password) == True:
-                        return True
-    return False
+    if check_length(password) == True & check_uppercase(password) == True & check_lowercase(password) == True & check_number(password) == True & check_special(password) == True:
+        return True
+    else:
+        return False
 
 def display_error(password):
     cls()
