@@ -49,6 +49,7 @@ def password_checker(password):
                     if check_special(password) == True:
                         return True
     return False
+
 def display_error(password):
     cls()
     if check_length(password) == False:
