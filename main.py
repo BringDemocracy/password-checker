@@ -1,6 +1,14 @@
 import os, time # Importing the necessary libraries
 
 def cls(): # Function to clear the screen
+
+    '''
+    
+    This function is used to clear the screen.
+
+
+    '''
+
     os.system('cls' if os.name=='nt' else 'clear')
 
 def wait(x): # Function to wait for x seconds
